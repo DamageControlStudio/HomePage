@@ -1,0 +1,18 @@
+---
+# default layout
+# Damage Control Studio
+# MIT License
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		{% include header.html %}
+	</head>
+	<body>
+		{% include nav.html %}
+		<div id="bodyindent">
+        	{{ content }}
+			{% include footer.html %}
+		</div>
+	</body>
+</html>
