@@ -5,5 +5,5 @@ permalink: /essay/
 ---
 
 {% for post in site.posts %} {% if post.img == null %}
-[{{ post.title }}]({{ post.url }})  
+[{{ post.title }}]({{ post.url }})
 {% endif %} {% endfor %} 
