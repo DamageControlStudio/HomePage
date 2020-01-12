@@ -1,14 +1,30 @@
 ---
 layout: default
 ---
-<div class="panel panel-primary">
-    <div class="panel-heading">
-        <h3 class="panel-title">{{ page.title }}</h3>
+<div class="row">
+    <div class="col-md-9">
+        <div class="panel panel-info shadow">
+            <div class="panel-heading">
+                <h3 class="panel-title">{{ page.title }}</h3>
+            </div>
+            <div class="panel-body">
+                {{ content }}
+                <p class="text-center">
+                    <a class="btn btn-info" href="{{ site.baseurl }}/" role="button">返回首页</a>
+                </p>
+            </div>
+        </div>
     </div>
-    <div class="panel-body">
-    	{{ content }}
-        <p class="text-center">
-            <a class="btn btn-info" href="{{ site.baseurl }}/" role="button">返回首页</a>
-        </p>
+    <div class="col-md-3">
+        <div class="panel panel-warning shadow">
+                <div class="panel-heading">
+                    <h3 class="panel-title">文章列表</h3>
+                </div>
+                <div class="panel-body">
+                        {% for post in site.posts %}
+                        <a href="{{ post.url }}">{{ post.title }}</a><br />
+                        {% endfor %} 
+                </div>
+            </div>
     </div>
 </div>

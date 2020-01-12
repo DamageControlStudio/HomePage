@@ -3,12 +3,12 @@ layout: default
 ---
 
 <!-- 巨幕 -->
-<div class="jumbotron" style="background-color: white; text-align: center;">
+<div class="jumbotron jumbotron-center">
 	<img src="/img/banner.png" />
 </div>
 
 <!-- 装饰件：终端 -->
-<div class="panel panel-info">
+<div class="panel panel-info shadow">
 	<div class="panel-heading">
 		<h3 class="panel-title">终端 | Terminal</h3>
 	</div>
@@ -36,16 +36,16 @@ layout: default
 <!-- 展示项目 -->
 <div class="row">{% for post in site.posts %} {% if post.img %}
 	<div class="col-sm-6 col-md-4">
-		<div class="panel panel-primary">
+		<div class="panel panel-info shadow" >
 			<div class="panel-heading">
-				<h3 class="panel-title">{{ post.title }}</h3>
+				<h3 class="panel-title">{{post.title}}</h3>
 			</div>
 			<div class="panel-body">
 				<div class="thumbnail">
-					<img src="{{ site.baseurl }}/img/{{ post.img }}" />
+					<img src="{{site.baseurl}}/img/{{ post.img }}" />
 				</div>
-				<blockquote><p>{{ post.description }}</p></blockquote>
-				<a class="btn btn-info" href="{{ post.url }}" role="button">阅读详情</a>
+				<blockquote><p>{{post.description}}</p></blockquote>
+				<a class="btn btn-info" href="{{post.url}}" role="button">阅读详情</a>
 			</div>
 		</div>
 	</div>{% endif %} {% endfor %}
