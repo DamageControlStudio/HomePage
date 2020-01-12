@@ -2,7 +2,7 @@
 layout: post  
 title: 磊猴 世界  
 img: showhand.png  
-description: 🙈🐵  
+description: 🙈  
 ---  
 
 > 贝叶斯网络之父 Judea Pearl:  
