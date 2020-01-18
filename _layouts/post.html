@@ -1,20 +1,26 @@
 ---
 layout: default
 ---
+
 <div class="row">
+    {% if page.url != '/essay/' and page.url != '/contact/' %}
     <div class="col-md-9">
+    {% else %}
+    <div class="col-md-12">
+    {% endif %}
         <div class="panel panel-info shadow">
             <div class="panel-heading">
-                <h3 class="panel-title">{{ page.title }}</h3>
+                <h3 class="panel-title">{{page.title}}</h3>
             </div>
             <div class="panel-body">
-                {{ content }}
+                {{content}}
                 <p class="text-center">
-                    <a class="btn btn-info" href="{{ site.baseurl }}/" role="button">返回首页</a>
+                    <a class="btn btn-info" href="{{site.baseurl}}/" role="button">返回首页</a>
                 </p>
             </div>
         </div>
     </div>
+    {% if page.url != '/essay/' and page.url != '/contact/' %}
     <div class="col-md-3">
         <div class="panel panel-warning shadow">
                 <div class="panel-heading">
@@ -22,9 +28,10 @@ layout: default
                 </div>
                 <div class="panel-body">
                         {% for post in site.posts %}
-                        <a href="{{ post.url }}">{{ post.title }}</a><br />
+                        <a href="{{post.url}}">{{post.title}}</a><br />
                         {% endfor %} 
                 </div>
             </div>
     </div>
+    {% endif %}
 </div>
