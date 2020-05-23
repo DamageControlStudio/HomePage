@@ -1,18 +1,16 @@
 ---
-# default layout
-# Damage Control Studio
-# MIT License
+layout: compress
 ---
+
 <!DOCTYPE html>
-<html>
-	<head>
-		{% include header.html %}
-	</head>
-	<body>
-		{% include nav.html %}
-		<div class="bodyindent">
-        	{{content}}
-			{% include footer.html %}
-		</div>
-	</body>
+<html lang="zh-CN">
+{% include head.html %}
+<body>
+
+<div id="main">
+{{content}}
+</div>
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</body>
 </html>

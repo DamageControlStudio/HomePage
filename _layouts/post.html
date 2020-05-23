@@ -2,36 +2,25 @@
 layout: default
 ---
 
-<div class="row">
-    {% if page.url != '/essay/' and page.url != '/contact/' %}
-    <div class="col-md-9">
-    {% else %}
-    <div class="col-md-12">
-    {% endif %}
-        <div class="panel panel-info shadow">
-            <div class="panel-heading">
-                <h3 class="panel-title">{{page.title}}</h3>
-            </div>
-            <div class="panel-body">
-                {{content}}
-                <p class="text-center">
-                    <a class="btn btn-info" href="{{site.baseurl}}/" role="button">返回首页</a>
-                </p>
-            </div>
-        </div>
+<div class="page-container" style="zoom:125%;">
+    <div class="content" >
+    <article>
+        <h1 class="page-title">{{page.title}}</h1>
+        {% if page.author %}
+        <div class="meta"><span><i class="fa fa-calendar-o" aria-hidden="true"></i> {{page.date | date: '%Y年%m月%d日'}}&nbsp;&nbsp;&nbsp;&nbsp;</span><span><i class="fa fa-pencil-square-o" aria-hidden="true"></i> {{page.author}}</span></div>
+        {% endif %}
+        {{page.content | markdownify}}
+    </article>
+    <!-- 打赏链接、广告、评论 -->
+    交流信箱：
+    <script>
+        document.write(String.fromCharCode(103,108,105,111,98,108,97,115,116,64,111,117,116,108,111,111,107,46,99,111,109));
+    </script>
+    <div style="position: fixed; bottom: 75px; right: 30px; opacity: 0.8;">
+        <a href="/blog.html"><i class="fa fa-coffee" style="font-size: 30px; color: #7E57C2;"></i></a>
     </div>
-    {% if page.url != '/essay/' and page.url != '/contact/' %}
-    <div class="col-md-3">
-        <div class="panel panel-warning shadow">
-                <div class="panel-heading">
-                    <h3 class="panel-title">文章列表</h3>
-                </div>
-                <div class="panel-body">
-                        {% for post in site.posts %}
-                        <a href="{{post.url}}">{{post.title}}</a><br />
-                        {% endfor %} 
-                </div>
-            </div>
+    <div style="position: fixed; bottom: 30px; right: 30px; opacity: 0.8;">
+        <a href="/index.html"><i class="fa fa-home" style="font-size: 40px; color: #3366FF;"></i></a>
     </div>
-    {% endif %}
+    </div>
 </div>

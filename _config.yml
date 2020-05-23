@@ -1,2 +1,5 @@
-permalink: ':title/'
-include: [_pages]
+title: 控损工作室
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
