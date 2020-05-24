@@ -7,7 +7,7 @@ description: 默认源速度有点慢，可以换成清华的。
 
 默认源速度有点慢，可以换成清华的。  
 
-```
+``` cmdline
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/  
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/  
 conda config --set show_channel_urls yes  
@@ -21,11 +21,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 **最新消息：清华取得了镜像授权，重新开张。**  
 
 默认不激活 base  
-
-```
-conda config --set auto_activate_base false
-```
-
+`conda config --set auto_activate_base false`
 Linux 和 macOS 安装时注意选择路径，由于没有卸载功能，换目录的时候会遭遇一系列的问题。  
 
 macOS 下有一个比较坑的地方就是，默认用 conda install 安装的 TensorFlow spicy numpy 等都是支持 mkl 的版本，mkl 是 Intel 搞的可以加速科学计算的东西，但是好心办坏事，在完成某些作业时会发生如下错误：  

@@ -5,7 +5,7 @@ color: 888888
 description: 一句话说清楚 numpy.fromfunction() 函数咋回事
 ---
 
-```python
+``` python
 def my_function(z, y, x):
     return x * y + z
 ```

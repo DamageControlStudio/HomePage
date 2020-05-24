@@ -3,12 +3,8 @@
 Github Page + Jekyll + Bootstrap  
 Thank you, GitHub!  
 
-需要  
-favicon.ico  
-
 写作样本  
 
-```
 ---
 layout: default
 showcase: true
