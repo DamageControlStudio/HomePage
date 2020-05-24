@@ -2,7 +2,7 @@
 layout: post
 title: 随想：关于正则化解决过拟合问题
 author: 牛教授
-color: FF6F00
+color: 00897B
 description: 神经网络的学习方式在某些程度上与人类学习方式相似。
 ---
 

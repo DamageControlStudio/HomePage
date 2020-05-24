@@ -9,9 +9,8 @@ title: 思考奇
         {% include mininav.html %}
     </header>
     <div id="grid" data-columns class="cols">
-      {% assign posts_without_showcase = site.posts | where_exp: "post", "post.showcase != true" %}
-      {% for post in posts_without_showcase %}
-      <div class="box" style="background-color:#{{post.color}}">
+        {% for post in site.posts %}
+        <div class="box" style="background-color:#{{post.color}}">
             {% if post.img %}
             <a href="{{post.url | prepend: site.baseurl}}">
             <img class="feat-image" src={{ "/images/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
@@ -22,7 +21,7 @@ title: 思考奇
                 <p>{{post.description}}</p>
                 <div class="action">{{ post.date | date: '%B %d, %Y' }}<a href="{{post.url | prepend: site.baseurl}}"><i class="fa fa-arrow-right" aria-hidden="true">&nbsp;阅读</i></a></div> 
             </div>   
-      </div>
+        </div>
       {% endfor %}
    </div>
 </div>
