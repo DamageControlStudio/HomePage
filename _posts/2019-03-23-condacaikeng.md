@@ -7,7 +7,7 @@ description: 默认源速度有点慢，可以换成清华的。
 
 默认源速度有点慢，可以换成清华的。  
 
-``` cmd
+```
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/  
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/  
 conda config --set show_channel_urls yes  
@@ -22,7 +22,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 默认不激活 base  
 
-``` cmd
+```
 conda config --set auto_activate_base false
 ```
 
@@ -30,7 +30,7 @@ Linux 和 macOS 安装时注意选择路径，由于没有卸载功能，换目�
 
 macOS 下有一个比较坑的地方就是，默认用 conda install 安装的 TensorFlow spicy numpy 等都是支持 mkl 的版本，mkl 是 Intel 搞的可以加速科学计算的东西，但是好心办坏事，在完成某些作业时会发生如下错误：  
 
-``` cmd
+```
 OMP: Error #15: Initializing libiomp5.dylib, but found libiomp5.dylib already initialized.  
 OMP: Hint: This means that multiple copies of the OpenMP runtime have been linked into the program.  
 ```
@@ -51,7 +51,7 @@ Windows 下就不怎么好玩。安装的最后一步有两个选项，第一个
 2019-08-09 补充  
 目前 conda 还不支持 tensorflow-gpu 2.0 beta， 只能通过 pip 安装。可是这样就没法自动安装 cudnn 和 cudatoolkit。后两个库还是可以通过 conda 安装，可是版本又会出现混乱，tensorflow-gpu 只能支持到 cuda-10.0，而最新的 cuda 是 10.1。经过一番尝试，此刻可行的办法如下：（顺序不能变，第三行的命令会降级第二行安装好的版本，只有这样才能成功。）  
 
-``` cmd
+```
 pip install tensorflow-gpu==2.0.0-beta1  
 conda install cudnn=7.6.0  
 conda install cudatoolkit=10.0.130  

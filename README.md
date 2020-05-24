@@ -39,7 +39,7 @@ Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit number
 
 Jekyll also offers powerful support for code snippets:
 
-``` python
+```python
 def print_hi(name)
   puts "Hi, #{name}"
 end
