@@ -1,8 +1,10 @@
 # Damage Control Studio
   
-Github Page + Jekyll + Bootstrap
+Github Page + Jekyll + Bootstrap  
+Thank you, GitHub!  
 
-Thank you, GitHub!
+需要  
+favicon.ico  
 
 写作样本  
 
