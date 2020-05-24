@@ -51,7 +51,7 @@ Windows 下就不怎么好玩。安装的最后一步有两个选项，第一个
 2019-08-09 补充  
 目前 conda 还不支持 tensorflow-gpu 2.0 beta， 只能通过 pip 安装。可是这样就没法自动安装 cudnn 和 cudatoolkit。后两个库还是可以通过 conda 安装，可是版本又会出现混乱，tensorflow-gpu 只能支持到 cuda-10.0，而最新的 cuda 是 10.1。经过一番尝试，此刻可行的办法如下：（顺序不能变，第三行的命令会降级第二行安装好的版本，只有这样才能成功。）  
 
-```
+``` cmd
 pip install tensorflow-gpu==2.0.0-beta1  
 conda install cudnn=7.6.0  
 conda install cudatoolkit=10.0.130  
