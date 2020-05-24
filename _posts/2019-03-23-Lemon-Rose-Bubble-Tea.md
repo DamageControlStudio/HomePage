@@ -1,7 +1,6 @@
 ---  
 layout: post
 title: 磊猴 世界
-img: statistical_learning.png
 color: 37474F
 ---  
 

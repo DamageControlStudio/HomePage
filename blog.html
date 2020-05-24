@@ -4,6 +4,10 @@ title: 思考奇
 ---
 
 <div id="container">
+    <header>
+        <h1>博客 / 随笔 / 踩坑 / 思考奇</h1>
+        {% include mininav.html %}
+    </header>
     <div id="grid" data-columns class="cols">
       {% assign posts_without_showcase = site.posts | where_exp: "post", "post.showcase != true" %}
       {% for post in posts_without_showcase %}
@@ -16,7 +20,7 @@ title: 思考奇
             <div class="container">
                 <h4>{{post.title}}</h4>
                 <p>{{post.description}}</p>
-                <div class="action">{{ post.date | date: '%B %d, %Y' }}<a href="{{post.url | prepend: site.baseurl}}"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></div> 
+                <div class="action">{{ post.date | date: '%B %d, %Y' }}<a href="{{post.url | prepend: site.baseurl}}"><i class="fa fa-arrow-right" aria-hidden="true">&nbsp;阅读</i></a></div> 
             </div>   
       </div>
       {% endfor %}

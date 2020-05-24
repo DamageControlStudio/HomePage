@@ -1,6 +1,6 @@
 ---
 layout: post
-title: fromfunction
+title: np.fromfunction
 color: 888888
 description: 一句话说清楚 numpy.fromfunction() 函数咋回事
 ---

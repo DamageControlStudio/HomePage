@@ -2,25 +2,18 @@
 layout: default
 ---
 
-<div class="page-container" style="zoom:125%;">
+<div class="page-container" style="zoom:120%;">
     <div class="content" >
     <article>
         <h1 class="page-title">{{page.title}}</h1>
         {% if page.author %}
         <div class="meta"><span><i class="fa fa-calendar-o" aria-hidden="true"></i> {{page.date | date: '%Y年%m月%d日'}}&nbsp;&nbsp;&nbsp;&nbsp;</span><span><i class="fa fa-pencil-square-o" aria-hidden="true"></i> {{page.author}}</span></div>
         {% endif %}
+        {% include mininav.html %}
         {{page.content | markdownify}}
     </article>
+
     <!-- 打赏链接、广告、评论 -->
-    交流信箱：
-    <script>
-        document.write(String.fromCharCode(103,108,105,111,98,108,97,115,116,64,111,117,116,108,111,111,107,46,99,111,109));
-    </script>
-    <div style="position: fixed; bottom: 75px; right: 30px; opacity: 0.8;">
-        <a href="/blog.html"><i class="fa fa-coffee" style="font-size: 30px; color: #7E57C2;"></i></a>
-    </div>
-    <div style="position: fixed; bottom: 30px; right: 30px; opacity: 0.8;">
-        <a href="/index.html"><i class="fa fa-home" style="font-size: 40px; color: #3366FF;"></i></a>
-    </div>
+
     </div>
 </div>
