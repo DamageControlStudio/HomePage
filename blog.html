@@ -19,7 +19,7 @@ title: 思考奇
             <div class="container">
                 <h4>{{post.title}}</h4>
                 <p>{{post.description}}</p>
-                <div class="action">{{ post.date | date: '%B %d, %Y' }}<a href="{{post.url | prepend: site.baseurl}}"><i class="fa fa-arrow-right" aria-hidden="true">&nbsp;阅读</i></a></div> 
+                <div class="action">{{ post.date | date: '%Y年%m月%d日' }}<a href="{{post.url | prepend: site.baseurl}}"><i class="fa fa-arrow-right" aria-hidden="true">&nbsp;阅读</i></a></div> 
             </div>   
         </div>
       {% endfor %}
