@@ -11,3 +11,5 @@ color: 37474F
 Jay McClelland:  
 Is Deep Learning Statistical Learning?  
 ![statistical_learning](/images/statistical_learning.png)  
+
+思考奇[草稿](https://www/xxba.ga)  
