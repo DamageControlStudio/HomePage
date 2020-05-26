@@ -48,32 +48,7 @@ __粗体文本__
 ***粗斜体文本***
 ___粗斜体文本___
 
-***
-
-* * *
-
-*****
-
-- - -
-
-----------
-
-RUNOOB.COM
-GOOGLE.COM
-~~BAIDU.COM~~
-
-* 第一项
-* 第二项
-* 第三项
-
-+ 第一项
-+ 第二项
-+ 第三项
-
-
-- 第一项
-- 第二项
-- 第三项
+~~删除线~~
 
 1. 第一项
 2. 第二项
@@ -83,15 +58,17 @@ GOOGLE.COM
 > > 第一层嵌套
 > > > 第二层嵌套
 
-这个链接用 1 作为网址变量 [Google][1]
-这个链接用 runoob 作为网址变量 [Runoob][runoob]
-然后在文档的结尾为变量赋值（网址）
+![图标](http://static.runoob.com/images/runoob-logo.png)
 
-  [1]: http://www.google.com/
-  [runoob]: http://www.runoob.com/
- 
-![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png)
+|  表头   | 表头  |
+|  ----  | ----  |
+| 单元格  | 单元格 |
+| 单元格  | 单元格 |
 
-![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png "RUNOOB")
+| 左对齐 | 右对齐 | 居中对齐 |
+| :-----| ----: | :----: |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |
+
 
 ```
