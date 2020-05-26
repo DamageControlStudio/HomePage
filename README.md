@@ -3,8 +3,12 @@
 Github Page + Jekyll + Bootstrap  
 Thank you, GitHub!  
 
-写作样本  
+想法会发布在 [思考奇](https://www.sikao.ml)  
+实践放在 [博客](https://damagecontrol.studio/blog.html)  
+整理出有用的内容发布在 [首页](https://damagecontrol.studio)  
 
+写作样本  
+``` markdown
 ---
 layout: default
 showcase: true
@@ -50,3 +54,4 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
+```
