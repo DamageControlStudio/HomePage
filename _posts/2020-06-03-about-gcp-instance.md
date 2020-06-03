@@ -4,7 +4,7 @@ title: GCP App Engine 扣费问题
 color: 03A9F4
 author: onoicq
 description: 为什么 1 个 instance 每天会运行 57 小时？
----
+---  
 
 我在 GCP 上写了个小应用，由于是自己用的，所以打算就只用 App Engine 免费配额，并限制了 instance 个数。  
 文档中提到 F1 类型可每天使用28小时，因此配置最大个数为 1。服务器会根据访问情况决定 instance 个数，由于大部分时间属于闲置，服务器就自动调整为 0 相当于休眠或者关机了。  
