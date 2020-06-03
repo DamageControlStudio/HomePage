@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: GCP App Engine 扣费问题
 color: 03A9F4
 author: onoicq
