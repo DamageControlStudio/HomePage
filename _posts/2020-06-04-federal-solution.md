@@ -31,7 +31,9 @@ description: 付费的办法千千万，免费的办法有点难。
 
 树莓派上需要写一个 always_online.sh 脚本，由你决定他运行的频率(crontab)，里面的内容包括：  
 后台启动 ngrok  
-`screen -dmS ngrok bash -c './ngrok http 80';`
+``` shell
+screen -dmS ngrok bash -c './ngrok http 80';
+```
 
 尝试找出 https 链接，如果十次没找到，就终结 screen，下次再说  
 
