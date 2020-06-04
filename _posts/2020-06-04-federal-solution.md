@@ -115,7 +115,7 @@ async function handleRequest(request) {
 
 ## 次日凌晨增补
 
-后来查看文档发现，Workers 可以直接 302 跳转，使用一下模板即可：  
+后来查看文档发现，Workers 可以直接 302 跳转，script.js 使用以下内容即可：  
 
 ``` javascript
 async function handleRequest(request) {
