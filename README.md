@@ -7,7 +7,7 @@
 写作样本  
 ``` markdown
 ---
-layout: default
+layout: post
 showcase: true
 title: This is title
 img: banner.png
