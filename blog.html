@@ -17,7 +17,7 @@ title: 博客
             </a>
             {% endif %}
             <div class="container">
-                <h3>{{post.title}}</h3>
+                <h4>{{post.title}}</h4>
                 <p>{{post.description}}</p>
                 <div class="action">{{ post.date | date: '%Y年%m月%d日' }}<a href="{{post.url | prepend: site.baseurl}}"><i class="fa fa-arrow-right" aria-hidden="true">&nbsp;阅读</i></a></div> 
             </div>   
