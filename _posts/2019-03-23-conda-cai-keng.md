@@ -58,4 +58,12 @@ conda install cudatoolkit=10.0.130
 `tf.test.gpu_device_name()`  
 输出 `'/device:GPU:0'` 就对了。  
 
+2021-01-18 补充  
+创建环境时把 Python 版本带上，不要创建个空环境再用 conda install，否则在 Jupyter 里会出现莫名其妙的 import 找不到。  
+尽量像下面这样使用不会出错：
+
+```
+conda create -n xxx python=3.8
+```
+
 最后还是建议大家少折腾环境，多学习知识，多动手实操。听说 TensorFlow 在 Ubuntu 上跑得更有效率，但是呢，很可能实际卡在糟糕的结构设计，而系统之间的差别相比之下微不足道的。而且本地那一两块显卡可能很快就变成瓶颈了，到时候还得转云环境（如 Colab）。  
