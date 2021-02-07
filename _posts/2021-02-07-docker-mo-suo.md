@@ -85,8 +85,8 @@ Server.py 就是通常的 Flask 应用
 ## 跑起来
 
 首先 run 一下，得到 container  
-`docker run -d -p 80:80 damagecontrolstudio/sp7s`  
-把这条加入 crontab  
+`docker run -d -p 80:80 damagecontrolstudio/xxxx`  
+把这条加入服务器的 crontab（可不是 Docker 内）  
 `docker container start xxxxxxxxxx`
 
 ## 此外
