@@ -5,8 +5,6 @@ color: 888888
 description: 整理出一条 Docker 包装应用的路线，踩坑
 ---
 
-# Docker 摸索
-
 ## 希望用 Docker 做到
 
 1. 自动运行 Flask 作为服务器
