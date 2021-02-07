@@ -1,3 +1,10 @@
+---
+layout: post
+title: Docker 摸索
+color: 888888
+description: 整理出一条 Docker 包装应用的路线，踩坑
+---
+
 # Docker 摸索
 
 ## 希望用 Docker 做到
