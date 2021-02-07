@@ -84,4 +84,8 @@ Server.py 就是通常的 Flask 应用
 把这条加入 crontab  
 `docker container start xxxxxxxxxx`
 
+## 此外
+
+Docker 可以通过 hub.docker.com 自动构建；  
+Docker 里面的内容维护起来似乎不大方便，因为修改之后要 build 要 push 还要 pull； 
 以上只是整理出一条 Docker 包装应用的路线，踩坑。  
