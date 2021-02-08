@@ -89,7 +89,7 @@ Server.py 就是通常的 Flask 应用
 ~~把这条加入服务器的 crontab（可不是 Docker 内）~~  
 ~~`docker container start xxxxxxxxxx`~~  
 重新运行 container 并不会执行 start.sh，也就是不会自启动 cron 和 nginx。那么解决办法就是每次都 run 镜像装入一个新容器，容易用后销毁（`docker run --rm ubuntu`）。  
-如果需要永久化储存一些数据，需要使用 Docker Volumes 技术。  
+如果需要永久化储存一些数据，需要使用 Docker Volume 技术。  
 
 ## 此外
 
