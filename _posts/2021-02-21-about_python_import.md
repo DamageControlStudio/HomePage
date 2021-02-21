@@ -13,3 +13,5 @@ from . import mod
 # 下面这行在 3.x 中只能用于程序模式，也就是顶层脚本才能通过 import mod 的语法来导入位于同一目录下的其他模块
 import mod
 ```
+
+以上内容摘取自《Learning Python 5th》
