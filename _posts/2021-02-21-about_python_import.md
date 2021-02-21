@@ -14,4 +14,14 @@ from . import mod
 import mod
 ```
 
+最终的效果是不论 2.x 还是 3.x 中的文件，你都应该只选择一种使用模式，即包模式（使用相对导入）或程序模式（使用简单导入），并将真正的包模块文件单独放到一个子目录中，与顶层脚本文件隔离开来。  
+通过绝对导入使用完整的包路径，并且假定包的根目录位于模块搜索路径上，来替代包相对导入语法或简单导入：  
+
+``` Python
+# works in both program and package mode
+from system.section.mypkg import mod
+```
+
+对于所有的方案，最后一种（完整包路径导入）应该是最具可移植性的也是最强大的。  
+
 以上内容摘取自《Learning Python 5th》
