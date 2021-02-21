@@ -24,4 +24,6 @@ from system.section.mypkg import mod
 
 对于所有的方案，最后一种（完整包路径导入）应该是最具可移植性的也是最强大的。  
 
-以上内容摘取自《Learning Python 5th》
+在 Python 3.x 中，`from mypkg import spam` 是绝对导入：mypkg 的搜索跳过包路径并且 mypkg 位于 sys.path 中的一个绝对目录中。另一方面，`from . import spam` 是相对导入：spam 的查找只会是相对于该语句所在的包。  
+
+--以上内容摘自《Learning Python 5th》
