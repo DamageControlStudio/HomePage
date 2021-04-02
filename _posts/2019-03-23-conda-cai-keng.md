@@ -15,12 +15,10 @@ pip install pip -U
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple  
 ```
 
-<del>
-**嗨呀，清华说没能得到授权，不再提供了。**  
-**最新消息：清华取得了镜像授权，重新开张。**  
-</del> 
+**最新消息：清华的镜像经常断掉，可以考虑以下两款，都是姊妹。**  
 
-**最新消息：清华的镜像经常断掉，可以考虑 [opentuna](https://opentuna.cn/) [北外](https://mirrors.bfsu.edu.cn/) 都是姊妹**
+- [opentuna](https://opentuna.cn/)
+- [北外](https://mirrors.bfsu.edu.cn/) 
 
 默认不激活 base  
 `conda config --set auto_activate_base false`
