@@ -14,7 +14,7 @@ Alienware 是 SSD ＋ 指针硬盘，启动项里硬盘模式不能选择 Raid O
 先进 PE 系统把硬盘分好区（先备份 Win 10 的激活信息），然后装 Windows 10，然后装 Ubuntu。  
 后者在 Alienware R5 - R7 上是不能正常关机的，发现是 dw_i2c 引起的，然后上百度必应一顿搜索，全是他娘的不相关的解决方案。  
 最后靠浙江大学搭建的镜像站登上了 Google，第一条就是解决方案：```sudo nano /etc/default/grub```  
-把其中的一行改为：```GRUB_CMDLINE_LINUX_DEFAULT=“quiet initcall_blacklist=dw_i2c_init_driver”```  
+把其中的一行改为：```GRUB_CMDLINE_LINUX_DEFAULT="quiet initcall_blacklist=dw_i2c_init_driver"```  
 然后更新 grub，用 ```sudo update-grub```  
 更新：原版的 Dock 和 Top Bar 都用插件隐藏起来的话图标会重叠，或者休眠后出现两套 Dock。  
 解决办法就是卸载 ```sudo apt remove gnome-shell-extension-ubuntu-dock```  然后用默认的居中 Dock。  
