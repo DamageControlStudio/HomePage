@@ -15,7 +15,7 @@ pip install pip -U
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple  
 ```
 
-**最新消息：清华的镜像经常断掉，可以考虑以下两款，都是姊妹。**  
+**最新消息：清华的镜像经常断掉，可以考虑以下两款，都是姊妹。**
 
 - [opentuna](https://opentuna.cn/)
 - [北外](https://mirrors.bfsu.edu.cn/) 
